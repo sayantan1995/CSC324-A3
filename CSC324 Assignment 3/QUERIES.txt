@@ -1,0 +1,9 @@
+plane(p123, Model, Age).
+
+findall(PlaneNum, plane(PlaneNum, boeing747, _),Planes), findall(Age, plane(_, boeing747, Age), Ages).
+
+findall(FlightNum, flight(FlightNum, new_york, paris, _), Flights). 
+
+flight(FlightNum,los_angeles, paris, _), findall(Price, booked(_,FlightNum, jan17,Price), Cost).
+
+findall(Sin, booked(Sin,f237, feb23, _), Sins), findall(Name, passenger(Sin, Name, _, _), Names).
